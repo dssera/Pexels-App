@@ -5,7 +5,7 @@ import com.example.pexelsapp.images.domain.model.Image
 import com.example.pexelsapp.images.domain.model.NetworkError
 
 interface ImagesRepository {
-
-    fun getImages(): Either<NetworkError, List<Image>>
+    // add Either<NetworkError, List<Image>>
+    suspend fun getImages(): List<Image>
 
 }
